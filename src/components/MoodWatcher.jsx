@@ -7,7 +7,7 @@ const MoodWatcher = () => {
   useEffect(() => {
     const fetchMoods = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/mood/latest");
+        const res = await fetch("https://cyclebuddy-backend.onrender.com/api/mood/latest");
         const data = await res.json();
         setLatestMoods(data.mood); // this is an array of last 5 moods
       } catch (err) {

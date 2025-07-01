@@ -16,7 +16,7 @@ const MoodTracker = () => {
     }
 
     try {
-      const res = await fetch("http://localhost:5000/api/mood/update", {
+      const res = await fetch("https://cyclebuddy-backend.onrender.com/api/mood/update", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

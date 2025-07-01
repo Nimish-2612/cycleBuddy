@@ -50,7 +50,7 @@ const sendTokenToBackend = async (token) => {
   if (!user || !jwt || !token) return;
 
   try {
-    const res = await fetch("http://localhost:5000/api/notify/save-token", {
+    const res = await fetch("https://cyclebuddy-backend.onrender.com/api/notify/save-token", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
